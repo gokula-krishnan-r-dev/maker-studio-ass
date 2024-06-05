@@ -28,7 +28,7 @@ To run the Task Manager SaaS application locally, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/task-manager-saas.git
+   git clone https://github.com/gokula-krishnan-r-dev/maker-studio-ass.git
    ```
 
 2. Install dependencies:
