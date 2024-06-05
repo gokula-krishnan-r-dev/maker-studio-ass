@@ -5,7 +5,8 @@
   "scripts": {
     "start": "npx ts-node src/index.ts",
     "dev": "nodemon --exec ts-node src/index.ts",
-    "build": "tsc",
+    "build": "tsc --outDir dist",
+    "build:prod": "tsc --outDir dist",
     "test": "jest"
   },
   "keywords": [],
