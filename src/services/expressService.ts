@@ -23,11 +23,7 @@ export const post = <A, E, R>(
 ) =>
   Effect.gen(function* () {
     const run = yield* FiberSet.makeRuntime<R>();
-    app.post(path, (req, res) => {
-      console.log("POST", path, req.body);
-
-      run(body(req, res));
-    });
+    app.post(path, (req, res) => run(body(req, res)));
   });
 
 export const put = <A, E, R>(
